@@ -71,9 +71,9 @@ xly = yf.Ticker("XLY")
 spy = yf.Ticker("SPY")
 
 # Download historical data for the past 5 years
-xlp_data = xlp.history(period="10y")
-xly_data = xly.history(period="10y")
-spy_data = spy.history(period="10y")
+xlp_data = xlp.history(period="5y")
+xly_data = xly.history(period="5y")
+spy_data = spy.history(period="5y")
 
 # Extract the closing prices
 xlp_close = xlp_data['Close']
