@@ -1,8 +1,7 @@
 # Let's import the library
 import yfinance as yf 
-
-# Pandas is used for dataframe and tabular data manipulation
-import pandas as pd 
+import pandas as pd
+import numpy as np 
 import matplotlib.pyplot as plt
 from fredapi import Fred
 import simfin as sf
@@ -76,8 +75,8 @@ xly_data = xly.history(period="5y")
 spy_data = spy.history(period="5y")
 
 # Extract the closing prices
-xlp_close = xlp_data['Close']
-xly_close = xly_data['Close']
+xlp_close = (xlp_data['Close'])
+xly_close = (xly_data['Close'])
 spy_close = spy_data['Close']
 
 # Calculate XLY/XLP ratio
