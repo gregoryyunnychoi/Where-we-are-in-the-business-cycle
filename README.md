@@ -1,4 +1,4 @@
-This contains a replication of the MSCI Consumer Discretionary and Consumer Staples indices using the price-weighted method. MSCI publishes the top 10 publicly traded corporations for both discretionary and staple categories but does not provide historical data. The price-weighted method is used due to the unavailability of historical market capitalisation data on Yahoo Finance.
+This contains a replication of the MSCI Consumer Discretionary and Consumer Staples indices using the price-weighted method. MSCI publishes the top 10 publicly traded corporations for both discretionary and staple categories but does not provide historical data. The price-weighted method is used due to the unavailability of historical market capitalisation data on Yahoo Finance API function key.
 
 Both indices are combined and arguably serve as leading indicators [1] of the FTSE 100 and the UK economy, especially due to their continuous nature, in contrast to other leading indicators that are only available monthly or quarterly.
 
