@@ -36,13 +36,13 @@ discretionary_tickers = [
     'PSN.L'   # Persimmon
 ]
 # Download FTSE 100 index data
-ftse_data = yf.download(ftse_ticker, start='2023-01-01', end='2024-12-01')['Adj Close']
+ftse_data = yf.download(ftse_ticker, start='2024-09-01', end='2025-01-05')['Adj Close']
 
 # Download data for Consumer Staples
-staples_data = yf.download(staples_tickers, start='2023-01-01', end='2024-12-01')['Adj Close']
+staples_data = yf.download(staples_tickers, start='2024-09-01', end='2025-01-05')['Adj Close']
 
 # Download data for Consumer Discretionary
-discretionary_data = yf.download(discretionary_tickers, start='2023-01-01', end='2024-12-01')['Adj Close']
+discretionary_data = yf.download(discretionary_tickers, start='2024-09-01', end='2025-01-05')['Adj Close']
 # Drop rows with missing values
 staples_data = staples_data.dropna()
 discretionary_data = discretionary_data.dropna()
