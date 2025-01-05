@@ -69,6 +69,7 @@ aligned_staples, aligned_discretionary = staples_index_value.align(discretionary
 # Calculate Discretionary/Staples ratio
 discretionary_staples_ratio = aligned_discretionary / aligned_staples
 
+######################################################################################################################################################
 # Plot ratio with FTSE 100 on secondary y-axis
 fig, ax1 = plt.subplots(figsize=(12, 6))
 # Plot Discretionary/Staples ratio
@@ -90,4 +91,33 @@ fig.tight_layout()
 fig.legend(loc='upper left', bbox_to_anchor=(0.1,0.9))
 
 plt.show()
+######################################################################################################################################################
+# Turn both Discretionary/Staples ratio and FTSE 100 into percentage change since initial value
+# and use a single y-axis for comparison
 
+# Calculate percentage change since initial value for FTSE 100
+#ftse_percentage_change = (ftse_data / ftse_data.iloc[0] - 1) * 100
+
+# Calculate percentage change since initial value for Discretionary/Staples ratio
+#discretionary_staples_percentage_change = (discretionary_staples_ratio / discretionary_staples_ratio.iloc[0] - 1) * 100
+
+# Plot both series with a single y-axis
+#fig, ax = plt.subplots(figsize=(12, 6))
+
+# Plot percentage change for Discretionary/Staples ratio
+#ax.plot(discretionary_staples_percentage_change.index, discretionary_staples_percentage_change, 
+#        color='purple', label='Discretionary/Staples Ratio (% Change)')
+
+# Plot percentage change for FTSE 100
+#ax.plot(ftse_percentage_change.index, ftse_percentage_change, 
+#        color='blue', label='FTSE 100 (% Change)')
+
+# Add labels, title, and legend
+#ax.set_xlabel('Date')
+#ax.set_ylabel('Percentage Change (%)')
+#ax.set_title('Percentage Change: Discretionary/Staples Ratio and FTSE 100 Index')
+#ax.legend(loc='upper left')
+#ax.grid(True)
+
+#plt.tight_layout()
+#plt.show()
