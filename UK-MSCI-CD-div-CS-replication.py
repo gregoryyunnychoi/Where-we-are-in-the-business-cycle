@@ -14,7 +14,7 @@ print(websockets.__version__)
 # FTSE 100 index ticker symbol
 ftse_ticker = '^FTSE'
 
-# MSCI UK Consumer Staples constituents
+# MSCI UK Consumer Staples constituents https://www.msci.com/documents/10199/0c31f904-628b-4c2f-8c0d-b8bdcd87fd26 
 staples_tickers = [
     'ULVR.L',  # Unilever PLC
     'BATS.L',  # British American Tobacco
@@ -28,7 +28,7 @@ staples_tickers = [
     'SBRY.L'   # Sainsbury (J)
 ]
 
-# MSCI UK Consumer Discretionary constituents
+# MSCI UK Consumer Discretionary constituents https://www.msci.com/documents/10199/e03ad7c3-cd68-4a97-8712-3846390de7a0 
 discretionary_tickers = [
     'CPG.L',  # Compass Group
     'IHG.L',  # InterContinental Hotels Group
