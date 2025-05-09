@@ -1,6 +1,12 @@
 import yfinance as yf
 import pandas as pd
 import matplotlib.pyplot as plt
+import websockets
+print(websockets.__version__)
+
+
+#pip install yfinance[fast]
+#pip uninstall yfinance
 
 #########################
 # Adding FTSE100 ##
@@ -36,13 +42,14 @@ discretionary_tickers = [
     'PSN.L'   # Persimmon
 ]
 # Download FTSE 100 index data
-ftse_data = yf.download(ftse_ticker, start='2024-09-01', end='2025-01-05')['Adj Close']
+ftse_data = yf.download(ftse_ticker, start='2024-09-01', end='2025-05-05')['Close']
+
 
 # Download data for Consumer Staples
-staples_data = yf.download(staples_tickers, start='2024-09-01', end='2025-01-05')['Adj Close']
+staples_data = yf.download(staples_tickers, start='2024-09-01', end='2025-05-05')['Close']
 
 # Download data for Consumer Discretionary
-discretionary_data = yf.download(discretionary_tickers, start='2024-09-01', end='2025-01-05')['Adj Close']
+discretionary_data = yf.download(discretionary_tickers, start='2024-09-01', end='2025-05-05')['Close']
 # Drop rows with missing values
 staples_data = staples_data.dropna()
 discretionary_data = discretionary_data.dropna()
