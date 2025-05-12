@@ -37,8 +37,11 @@ plt.show()
 # Create a Fred object with your API key (you'll need to get your own key from https://fred.stlouisfed.org/)
 fred = Fred(api_key='42af668b5078244d37f40c133816843a')
 # Download US real GDP data from FRED (quarterly data)
-rGDP_data = fred.get_series('GDPC1', observation_start='2019-01-01', observation_end='2024-12-01')
-
+rGDP_data = np.log(
+    fred.get_series('GDPC1',
+                    observation_start='2019-05-11',
+                    observation_end='2025-05-11')
+)
 # Resample rGDP to daily to match with XLY/XLP ratio
 rGDP_daily = rGDP_data.resample('D').ffill()
 

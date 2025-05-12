@@ -1,5 +1,6 @@
 import yfinance as yf
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import websockets
 print(websockets.__version__)
@@ -42,7 +43,8 @@ discretionary_tickers = [
     'PSN.L'   # Persimmon
 ]
 # Download FTSE 100 index data
-ftse_data = yf.download(ftse_ticker, start='2024-09-01', end='2025-05-30')['Close']
+#ftse_data = yf.download(ftse_ticker, start='2024-09-01', end='2025-05-30')['Close']
+ftse_data = np.log(yf.download(ftse_ticker, start='2024-09-01', end='2025-05-30')['Close'])
 
 
 # Download data for Consumer Staples
