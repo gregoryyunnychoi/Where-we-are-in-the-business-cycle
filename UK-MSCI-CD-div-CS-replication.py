@@ -44,14 +44,14 @@ discretionary_tickers = [
 ]
 # Download FTSE 100 index data
 #ftse_data = yf.download(ftse_ticker, start='2024-09-01', end='2025-05-30')['Close']
-ftse_data = np.log(yf.download(ftse_ticker, start='2024-09-01', end='2025-05-30')['Close'])
+ftse_data = np.log(yf.download(ftse_ticker, start='2024-09-30', end='2025-06-30')['Close'])
 
 
 # Download data for Consumer Staples
-staples_data = yf.download(staples_tickers, start='2024-09-01', end='2025-05-30')['Close']
+staples_data = yf.download(staples_tickers, start='2024-09-30', end='2025-06-30')['Close']
 
 # Download data for Consumer Discretionary
-discretionary_data = yf.download(discretionary_tickers, start='2024-09-01', end='2025-05-30')['Close']
+discretionary_data = yf.download(discretionary_tickers, start='2024-09-30', end='2025-06-30')['Close']
 # Drop rows with missing values
 staples_data = staples_data.dropna()
 discretionary_data = discretionary_data.dropna()
