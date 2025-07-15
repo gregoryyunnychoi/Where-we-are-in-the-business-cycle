@@ -6,7 +6,8 @@ For more information on the MSCI Consumer Discretionary and Consumer Staples ind
 
 [1] It goes without saying that a leading indicator serves no more than the purpose of an indicator, as opposed to a predictor of the benchmark index. A quick check using the Johansen test for cointegration and the Granger-causality test shows no long-term cointegrated trend nor short-term Granger-causality occurring for the two series of data. This is inspired by Mark Meldrum's series of videos during my study toward the CFA and is mainly a reference indicator, among many, for any sign of SLOWDOWN (as oppose to an expansion/growth) of an economy or the benchmark index.
 
-![image](https://github.com/user-attachments/assets/3bb3d1de-73d2-4388-a914-1163acceeb73)
+<img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/88cee7e3-f24d-493d-a6da-1cb2ea27d823" />
+
 
 
 
