@@ -9,7 +9,6 @@ For more information on the MSCI Consumer Discretionary and Consumer Staples ind
 <img width="1189" height="590" alt="image" src="https://github.com/user-attachments/assets/88cee7e3-f24d-493d-a6da-1cb2ea27d823" />
 
 
-<img width="1189" height="590" alt="image" src="http://127.0.0.1:64561/" />
 
 
 
