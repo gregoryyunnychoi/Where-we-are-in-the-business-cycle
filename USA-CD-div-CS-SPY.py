@@ -120,7 +120,7 @@ import numpy as np
 fred = Fred(api_key='42af668b5078244d37f40c133816843a')
 
 # Fetch the Manufacturers' New Orders data from FRED (series ID: NEWORDER)
-new_orders_data = fred.get_series('NEWORDER', observation_start='2015-01-01')
+new_orders_data = fred.get_series('NEWORDER', observation_start='2020-01-01')
 
 # Convert to a DataFrame and set proper datetime index
 new_orders_data = pd.Series(new_orders_data)
