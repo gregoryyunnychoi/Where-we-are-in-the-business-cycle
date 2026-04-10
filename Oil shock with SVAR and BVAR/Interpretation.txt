@@ -1,0 +1,20 @@
+Oil price (row 1)
+The shock decays back toward $63 over 12 quarters in the SVAR, while the BVAR holds it nearly flat. This difference is important: the BVAR's Minnesota prior shrinks coefficients toward a random walk, so it treats the price shift as more persistent. The SVAR, estimated by OLS without shrinkage, allows the data to pull oil back toward its historical mean. Neither is "right" — they reflect different beliefs about oil price persistence, which is itself an open empirical question.
+
+GDP (row 2)
+Both models agree on the sign: oil up, GDP down. The SVAR shows a sharper initial drop that partially recovers, with wide bands reflecting genuine uncertainty about the propagation path. The BVAR gives a smoother, more persistent drag with tighter bands — a direct consequence of the prior shrinking dynamics toward a random walk.
+The UK and US charts look similar in shape here, which is a little surprising given the blog's finding that the UK takes a much harder GDP hit. The magnitudes are small in absolute terms (fractions of a percent QoQ), which is expected given that the IRF represents a one-standard-deviation shock scaled to the scenario log-deviation.
+
+Price level (row 3)
+Inflation rises on impact and stays elevated, correctly signed by construction. The BVAR gives a very flat, persistent response — the prior is doing most of the work here, holding the price level permanently higher. The SVAR shows a slight hump around quarters 3-5 before stabilising, which is more consistent with the typical energy pass-through literature.
+One thing to note: the y-axis is labelled "% deviation" and the numbers are small (0 to 0.175). This is the IRF of the YoY inflation series itself, not the cumulative price level. So 0.1 means YoY inflation is 0.1pp higher than baseline, not that the price level is 0.1% higher.
+
+Policy rate (row 4)
+This is the most interesting panel. The SVAR median for both UK and US drifts slightly negative after an initial near-zero response, suggesting the model sees the growth drag as eventually dominating the inflation signal. The BVAR keeps the rate essentially flat at zero throughout, with tight bands.
+The near-zero rate response across both models and both countries is consistent with the blog's conclusion that central banks are expected to look through the supply shock rather than hike aggressively — at least for the low and medium scenarios.
+
+UK vs US comparison
+The charts are structurally very similar, which suggests the differential the blog emphasises (UK GDP much worse than US) is not strongly visible at the scale of a one-standard-deviation impulse. It would become more apparent if you plotted the two countries on the same axes scaled to the same shock size. The main visible difference is that the US SVAR inflation response fades back toward zero by horizon 12 while the UK's stays slightly elevated, consistent with the UK being more exposed to energy pass-through via petrol and gas prices.
+
+SVAR vs BVAR comparison across both charts
+The BVAR consistently produces tighter bands and flatter, more persistent responses. This is the Minnesota prior working as designed: shrinkage reduces parameter uncertainty (hence tighter bands) and the random walk prior on oil means shocks are treated as more permanent. The SVAR's wider bands honestly reflect that with ~130 observations and 4 lags, OLS coefficient uncertainty is non-trivial.
